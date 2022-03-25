@@ -12,7 +12,7 @@ while True:
     for i in range(len(all_lines)):
         #loop through lyrics.txt
         content = {
-            "custom_status": {"emoji": ":bigassforehead:", "text": all_lines[i]}
+            "custom_status": {"text": all_lines[i]}
         }
 
         requests.patch("https://ptb.discordapp.com/api/v8/users/@me/settings", headers={"authorization": token}, json=content)
